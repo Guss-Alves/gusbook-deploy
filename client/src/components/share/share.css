@@ -1,0 +1,107 @@
+.shareWrapper{
+    padding: 15px 25px 25px 25px;
+    /* background: rgb(175, 175, 175); */
+    margin-top: 15px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.39); 
+box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.39);
+}
+.shareTop{
+    display: flex;
+    align-items: center;
+}
+.sharePic{
+    height: 45px;
+    width: 45px;
+    border-radius: 50px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.shareInput{
+    width: 100%;
+    margin-left: 10px;
+    border-radius: 30px;
+    padding: 4px;
+    padding-left: 10px;
+    padding-top: 10px;
+    border: 1px solid rgb(24, 23, 23);
+    font-size: 15px;
+}
+
+.shareHr{
+    margin: 10px 0 10px 0;
+}
+
+.shareBottom{
+    display: flex;
+    justify-content: space-around;
+}
+.shareOptions{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+}
+.shareOptions:hover{
+    background: rgb(215, 211, 211);
+    border-radius: 30px;
+
+}
+.shareOptionSpan{
+    font-weight: 500;
+    margin-left: 5px;
+}
+.shareOptionsPost{
+    cursor: pointer;
+    padding: 10px;
+}
+.shareOptionButton{
+    background: rgb(52, 183, 52);
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 7px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+.shareOptionButton:hover{
+    background: rgb(22, 224, 22);
+}
+
+.shareImgContainer{
+    padding: 10px 0;
+    position: relative;
+}
+.shareImgTemp{
+    width: 100%;
+    object-fit: cover;
+}
+.cancelImg{
+    position: absolute;
+    top: 15px;
+    right: 5px;
+    color: red;
+    font-size: 30px;
+    cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+    .shareWrapper {
+        width: 100%;
+        padding: 15px 0;
+        border-radius: 0px;
+    }
+    .shareOptions{
+        flex-direction: column;
+        padding: 0px;
+    }
+    .shareOptions:hover{
+        background:white;
+    }
+    .shareInput{
+        width: 65%;
+    }
+    .shareTop{
+        justify-content: space-evenly;
+    }
+}

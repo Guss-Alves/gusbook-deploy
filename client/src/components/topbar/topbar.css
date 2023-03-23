@@ -1,0 +1,145 @@
+.topbarContainer{
+    height: 60px;
+    width: 100%;
+    background-color: #1877f2;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+.topbarLeft{
+    flex: 3;
+}
+.logo{
+    font-size: 35px;
+    color: white;
+    margin-left: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.topbarCenter{
+    flex: 4;
+}
+.searchBar{
+    width: 100%;
+    height: 35px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+.searchIcon{
+    margin: 10px !important;
+}
+.searchInput{
+    width: 80%;
+    border: none;
+}
+.searchInput:focus{
+    outline: none;
+}
+
+.topbarRight{
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.topbarFeatures{
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 20px !important;
+    justify-content: space-around;
+    width: 8.5em;
+    margin-left: 15px;
+}
+.topbarIcons{
+    position: relative;
+    margin-right: 15px;
+    cursor: pointer;
+    color: rgb(232, 228, 228) !important;
+}
+.topbarIconBadge{
+    width: 15px;
+    height: 15px;
+    background: red;
+    border-radius: 50px;
+    color: white;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.homePic{
+    height: 45px;
+    width: 45px;
+    border-radius: 50px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.logOut{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #1877f2;
+    border: none;
+}
+.logOutSpan{
+    color: white;
+    font-size: 15px;
+} 
+.logOutIcon{
+    color: white;
+    font-size: 22px;
+}
+.mobile-nav{
+    display: none;
+}
+.topBarIcon{
+    margin: 0px 10px 0 10px;
+    cursor: pointer;
+    color: rgb(232, 228, 228) !important;
+}
+.showLeftBar{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 80%;
+    min-height: 100vh;
+    padding: 5px 1px 1px 1px;
+    background-color: white;
+}
+.noShowLeftBar{
+    display: none;
+}
+@media screen and (max-width: 480px) {
+    .topbarCenter {
+        display: none;
+    }
+    .topbarContainer{
+        width: 100%;
+    }
+    .topbarFeatures{
+        display: none;
+    }
+    .topbarRight{
+        justify-content:center;
+    }
+    .homePic{
+        margin-right: 15px;
+    }
+    .logo{
+        margin-left: 5px;
+    }
+    .mobile-nav{
+        display: flex;
+    }
+}
