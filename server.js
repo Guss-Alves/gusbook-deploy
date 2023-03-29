@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
-const port = 8000;
+const localPort = 8000;
 
 require('dotenv').config();
 
@@ -17,4 +17,4 @@ require('./server/routes/user.routes')(app);
 require('./server/routes/post.routes')(app);
 
 
-app.listen(port, () => console.log(`Listening on port: ${port}`) );
+app.listen(process.env.PORT || localPort, () => console.log(`Listening on port: ${localPort}`) );
