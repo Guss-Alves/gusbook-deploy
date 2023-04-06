@@ -19,7 +19,7 @@ const Login = () => {
             password: password.current.value
         }
         try{
-            const res = await axios.post("http://localhost:8000/api/user/login", userCredentials);
+            const res = await axios.post("api/user/login", userCredentials);
                 dispatch({ type:"LOGIN_SUCCESS", payload: res.data });
         }catch(err){
             dispatch({ type:"LOGIN_FAILURE", payload: err });
