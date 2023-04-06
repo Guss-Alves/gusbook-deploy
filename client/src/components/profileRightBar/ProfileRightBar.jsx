@@ -81,7 +81,7 @@ const ProfileRightBar = ({ user, userInfo }) => {
                     <div className="listFriends">
                         {
                             friends.length !== 0 ?
-                                friends.map((item) => {
+                                friends?.map((item) => {
                                     return (
                                             <Link key={item._id} to={`/profile/${item._id}`} style={{ textDecoration: "none" }}>
                                                 <div className="RightBarBottomItem">

@@ -75,7 +75,7 @@ const Leftbar = ({sideBarVisible, setSideBarVisible}) => {
                 <hr className='leftBarHr' />
                 <h3 className='leftBarTitle'>Suggested Friends</h3>
                 {
-                    suggest.map((item) => {
+                    suggest?.map((item) => {
                         return (
                             <Link key={item._id} to={`/profile/${item._id}`} style={{textDecoration: "none"}} onClick={()=>setSideBarVisible(!sideBarVisible)}>
                                 {
