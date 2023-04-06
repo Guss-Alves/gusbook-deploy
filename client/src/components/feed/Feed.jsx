@@ -12,7 +12,7 @@ const Feed = ({userInfo}) => {
 
     useEffect(() => {
         const fetchPosts = async () =>{
-            await axios.get(`http://localhost:8000/api/timeline/${user._id}`)
+            await axios.get(`api/timeline/${user._id}`)
             .then(res=>{
                 setPosts(
                     res.data.sort((p1,p2)=>{

@@ -42,7 +42,7 @@ const ProfileEdit = ({userInfo}) => {
                         from: from.current.value,
                         relationship: relationship.current.value
                     }
-                    await axios.put(`http://localhost:8000/api/user/${id}`, newInfoWithPic);
+                    await axios.put(`api/user/${id}`, newInfoWithPic);
                     window.location.reload();
                 }catch(err){
                     console.log(err);
@@ -57,7 +57,7 @@ const ProfileEdit = ({userInfo}) => {
                         relationship: relationship.current.value,
                         profilePicture: userInfo.profilePicture
                     }
-                    await axios.put(`http://localhost:8000/api/user/${id}`, newInfo);
+                    await axios.put(`api/user/${id}`, newInfo);
                     window.location.reload();
                 }
             }catch(err){

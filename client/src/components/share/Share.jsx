@@ -29,7 +29,7 @@ const Share = ({userInfo}) => {
                         desc: desc.current.value,
                         img: url
                     }
-                    await axios.post("http://localhost:8000/api/post/new", newPostWithImg);
+                    await axios.post("api/post/new", newPostWithImg);
                     window.location.reload();
                 }catch(err){
                     console.log(err);
@@ -39,7 +39,7 @@ const Share = ({userInfo}) => {
                     userId: user._id,
                     desc: desc.current.value,
                 }
-                await axios.post("http://localhost:8000/api/post/new", newPost);
+                await axios.post("api/post/new", newPost);
                 window.location.reload();
             }
         } catch (err) {

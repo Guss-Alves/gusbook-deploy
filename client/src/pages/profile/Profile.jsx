@@ -18,7 +18,7 @@ const Profile = () => {
 
     useEffect(() => {
         const fetchUser = async () =>{
-            const res = await axios.get(`http://localhost:8000/api/user/${storageUser._id}`)
+            const res = await axios.get(`api/user/${storageUser._id}`)
             setcurrentUser(res.data);
         };
         fetchUser();
@@ -26,7 +26,7 @@ const Profile = () => {
 
     useEffect(() => {
         const fetchUser = async () =>{
-            const res = await axios.get(`http://localhost:8000/api/user/${id}`)
+            const res = await axios.get(`api/user/${id}`)
             setUser(res.data);
         };
         fetchUser();

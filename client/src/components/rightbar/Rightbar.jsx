@@ -14,7 +14,7 @@ const Rightbar = () => {
     useEffect(() => {
         const getFriends = async () => {
             try {
-                const res = await axios.get(`http://localhost:8000/api/friends/${user._id}`)
+                const res = await axios.get(`api/friends/${user._id}`)
                 setFriends(res.data);
             } catch (err) {
                 console.log(err);

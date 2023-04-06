@@ -15,7 +15,7 @@ const ProfileFeed = ({userInfo}) => {
 
     useEffect(() => {
         const fetchPosts = async () =>{
-            await axios.get(`http://localhost:8000/api/profile/${id}`)
+            await axios.get(`api/profile/${id}`)
             .then(res =>{
                 setPosts(
                     // console.log('res aqui doo profileFeed',res);

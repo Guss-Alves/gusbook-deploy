@@ -16,7 +16,7 @@ const ProfileRightBar = ({ user, userInfo }) => {
     useEffect(() => {
         const getFriends = async () => {
             try {
-                const res = await axios.get(`http://localhost:8000/api/friends/${id}`)
+                const res = await axios.get(`api/friends/${id}`)
                 // console.log('im hereeee',res)
                 setFriends(res.data);
             } catch(err) {
@@ -28,7 +28,7 @@ const ProfileRightBar = ({ user, userInfo }) => {
 
     const handleClick = async () => {
         try {
-            await axios.put(`http://localhost:8000/api/user/followAndUnfollow/${user._id}`, { userId: userInfo._id });
+            await axios.put(`api/user/followAndUnfollow/${user._id}`, { userId: userInfo._id });
             window.location.reload();
         } catch(err) {
             console.log(err);

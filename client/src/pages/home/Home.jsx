@@ -13,7 +13,7 @@ const Home = () => {
 
     useEffect(() => {
         const fetchUser = async () => {
-            const res = await axios.get(`http://localhost:8000/api/user/${user._id}`)
+            const res = await axios.get(`api/user/${user._id}`)
             // console.log('res dos posts',res);
             setUserInfo(res.data);
         };

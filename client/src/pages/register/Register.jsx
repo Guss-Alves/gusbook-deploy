@@ -22,7 +22,7 @@ const Register = () => {
                 password: password.current.value,
             };
             try {
-                await axios.post("http://localhost:8000/api/user/new", user);
+                await axios.post("api/user/new", user);
                 navigate('/');
             } catch (err) {
                 console.log(err);

@@ -12,7 +12,7 @@ const PostDelete = ({post}) => {
     }
     
     const handleDelete = ()=>{
-        axios.delete(`http://localhost:8000/api/delete/post/${post._id}`)
+        axios.delete(`api/delete/post/${post._id}`)
             .then(res => {
                 console.log(res)
                 window.location.reload();

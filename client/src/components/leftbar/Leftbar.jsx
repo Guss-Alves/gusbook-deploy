@@ -22,7 +22,7 @@ const Leftbar = ({sideBarVisible, setSideBarVisible}) => {
     useEffect(() => {
         const getSuggest = async () => {
             try {
-                const res = await axios.get("http://localhost:8000/api/allUsers")
+                const res = await axios.get("api/allUsers")
                 setSuggest(res.data);
             } catch (err) {
                 console.log(err);
