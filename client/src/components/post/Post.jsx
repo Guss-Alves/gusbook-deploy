@@ -62,7 +62,7 @@ const Post = ({ post }) => {
                 </div>
                 <div className="postBottom">
                     <div className="postBottomLeft">
-                        <img onClick={likeHandler} className='likeIcon' src={'./build/assets/like-button.png'} alt="likes" />
+                        <img onClick={likeHandler} className='likeIcon' src={'./assets/like-button.png'} alt="likes" />
                         <span className='likeCounter'>{like} likes</span>
                     </div>
                     <div className="postBottomRight">
